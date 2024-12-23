@@ -31,8 +31,8 @@ const GameStarted = () => {
 
   }
   return (
-   <div className='' >
-     <div  className='flex items-center justify-between max-w-[1100px] m-auto pt-12'>
+   <div className='h-3/4 mt-6 m-4 bg-zinc-800 rounded-lg' >
+     <div  className='flex items-center justify-between max-w-[1100px]  m-auto pt-12'>
       <TotalScore score={score} />
      <NumberButton selectedNumber={selectedNumber}
      setSelectedNumber={setSelectedNumber}
@@ -40,6 +40,7 @@ const GameStarted = () => {
      </div>
      <RollDice currentDice={currentDice}
      handleRollDice={handleRollDice}
+     setScore={setScore}
      />
    </div>
   )
